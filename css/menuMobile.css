@@ -1,0 +1,86 @@
+/*----------------------Menu Mobile para Index------------------------------*/
+* {
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    background: rgba(0,0,0,.20);
+}
+
+#btn-menu {
+   display: none;
+}
+
+.header label {
+   display: none;
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   padding: 3px;
+   border-right: 1px solid #fff;
+   color: white;
+   border-radius: 3px;
+   text-align: center;
+   font-size: 1.5em;
+}
+
+.header label:hover {
+   cursor: pointer;
+   background: rgba(0,0,0,0.3);
+}
+
+.nav {
+   background: rgba(0,0,0,0.2);
+}
+
+.nav ul{
+   margin: 0;
+   list-style: none;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+}
+
+.nav li {
+   border-right: 1px solid #FBFCFC;
+}
+
+.nav li a{
+   display: block;
+   padding: 15px 20px;
+   color: #FBFCFC;
+   text-decoration: none;
+}
+
+.nav li:hover {
+   background: rgba(0,0,0,0.3);
+}
+
+@media (max-width:768px){ /*de aca para abajo*/
+
+.header label {
+   display: block;
+}
+
+.nav {
+   position: absolute;
+   width: 70%;
+   margin-left: -70%;
+   transition: all 0.5s;
+}
+
+.nav ul {
+   flex-direction: column;
+}
+
+.nav li {
+   border-top: 1px solid #FBFCFC;
+}
+
+#btn-menu:checked ~ .nav { /*cuando tenga el checked debe buscar a menu*/
+   margin: 0; /*cuando pase eso el menu tendra un margen de 0*/
+
+}
+
+}
