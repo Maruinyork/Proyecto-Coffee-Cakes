@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo {
     font-size: 2em;
-    color: #644531;
+    color: #4C2C13;
     padding-top: 10px;
     padding-bottom: 16px;
     font-family: 'Pacifico', cursive;
@@ -75,6 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*-------------Estilos del Menu--------------*/
+
 .nav {
     width: 100%;
     position: relative;
@@ -109,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.5rem;
     width: 35px;
     height: 35px;
-    background: #B5926D;
+    background: #FFEDBA;
     border-radius: 50%;
 }
 
@@ -158,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
 /*-------------------Animacion heroBanner----------------------*/
 
 .heroBanner { 
-    margin-top: -139px;
+    margin-top: -125px;
     height: calc(100vh);
     width: 100%; 
     background-size: cover;
@@ -169,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
     animation: heroBanner 15s infinite linear;
     position: relative; /*para que se muestre despues del menu de navegacion*/
     z-index: -1000;
-    border-top: 2px outset #CC8E60;
+    border-top: 2px outset #DECFAC;
 }
 
 @keyframes heroBanner { /*---LINEA DE TIEMPO--- la animacion se llama heroBanner*/
@@ -208,7 +209,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     z-index: 1000;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.2); /*oscurezco el banner*/
 }
 
 .heroBanner__img {
@@ -220,11 +220,11 @@ h1, h2, h3, h4, h5, h6 {
 /*-----------------Estilos del Banner-------------------*/
 
 .banner {
-    margin-top: -120px;
+    margin-top: -118px;
     background-color:#644531;
     position: relative; /*para que se muestre despues del menu de navegacion*/
     z-index: -1000; /* uso de --Z-- que se vea la direccion y el phone que quedan debajo sino*/
-    border-top: 2px outset #CC8E60;
+    border-top: 2px outset #D2B48C;
 }
 
 .banner:before {
@@ -234,7 +234,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     z-index: 1000;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.4); /*oscurezco un poco las tonalidades*/
 }
 
 .banner__img {
@@ -277,28 +276,18 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
 }
 
-.main__about__description .column:nth-child(2){
-    padding: 20px;
-    text-align: center;
-}
-
- .main__about__description .column--50:nth-child(2),
- .column__text {
-    font-size: 1em;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    line-height: 14px;
-}
-
 .btn {
     display: block;
     text-align: center;
     text-decoration: none;
     width: 120px;
-    background: #CC8E60;
+    background: #B5926D;
     padding: 10px;
     margin: 17px auto;
     color: #FBFCFC;
+    border-radius: 5%;
 }
+
 .btn:hover {
     background: none;
     color:#20201D;
@@ -334,6 +323,65 @@ h1, h2, h3, h4, h5, h6 {
     color: #CC8E60;
 }
 
+.main__txt {
+    padding-bottom: 20px;
+}
+
+.imagenes2 img {
+    max-width: 100%;
+}
+
+.imagenes2 img:nth-child(2){
+    margin-top: 10px;
+}
+
+.imagen1 img{
+    max-width: 100%;
+}
+
+.imagen1 img:nth-child(2){
+    margin-top: 11px;
+}
+
+.contenedor-nosotros {
+    padding-top: 3rem;
+}
+
+.texto-nosotros, 
+.imagenes-nosotros {
+    flex: 0 0 calc(50% - 1rem); /*el primer parametro es de grow, no lo quiero mas grande, le doy 0, tampoco quiero que sea mas chico, asi que tmb le doy 0*/
+}
+
+.imagenes-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagenes-nosotros img {
+    border-radius: 5px;
+}
+
+.imagen1, 
+.imagenes2 {
+    flex: 0 0 calc(50% - 1rem); /*igual que el anterior y el basis le doy 50% y le resto 1 de la separacion*/
+}
+
+.texto-nosotros .welcome {
+    font-size: 2rem;
+    color:#4C2C13;
+    text-align: center;
+}
+
+.texto-nosotros h2 {
+    font-size: 2rem;
+    font-family: 'pacifico';
+    text-align: center;
+}
+
+.welcome2{
+    text-align: center;
+}
+
 
 /*----------- Estilos del Footer -----------*/
 
@@ -367,6 +415,7 @@ h1, h2, h3, h4, h5, h6 {
 /*-----------------Estilos responsive------------------*/
 
 @media screen and (min-width:480px) {
+
     .logo {
         color: #FBFCFC;
         padding: 0;
@@ -427,18 +476,12 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 
-    .main__about__description .column--50:nth-child(2),
-    .column__text {
-        line-height: 15px;
-        background-image: linear-gradient(#F6F7DD,#FDDDE6,#FDD5DF,#F6F7DD); /*----Uso de Gradiente-----*/
-    }
-   
     .column__title {
         font-size: 1.2em;
     }
 
     .today-special .column {
-        border: 5px solid #ddd;
+        border: 5px solid #B5926D;
         padding: 5px;
     }
 
@@ -454,21 +497,39 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width:768px) {
 
-.column--50 {  /*en version tablet ya la imagen se posicionara de modo distinto*/
-    width: 49%;
-    border: none;
+.contenedor-nosotros {
+    display: flex;
+    justify-content: space-between;
 }
 
-.main__title {
-    font-size: 2.2em;
+.texto-nosotros .welcome {
+    font-size: 2.5rem;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: -10px;
 }
 
-.main__about__description {
-    margin-top: 30px;
+.texto-nosotros h2 {
+    font-size: 3rem;
+    text-align: left;
+    margin-left: 40px;
 }
- 
-.main__about__description .column--50:nth-child(2),
-.column__txt{
+
+.welcome2 {
+    text-align: justify;
+    margin-left: 40px;
+}
+
+.btn--contact {
+    margin-left: 40px;
+}
+
+.imagenes2 {
+    margin-right: 40px;
+    margin-left: 8px;
+} 
+
+.column__txt {
     font-size: 1.1em;
     line-height: 14px;
     font-weight: lighter;
@@ -481,17 +542,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .column__title {
-    font-size: 1.1em;
+    font-size: 1.3em;
     margin-bottom: 17px;
     margin-top: 19px;
+    font-family: 'Montserrat';
 }
 
 .group__title {
     font-size: 2.2em;
+    margin-top: 80px;
 }
 
-.column--50 img{
-    height: 240px;
+.main-footer {
+    font-size: .6em;
 }
 
 }
@@ -499,10 +562,18 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (min-width:1024px) {
 
     .heroBanner { 
-        margin-top: -180px;
+        margin-top: -188px;
         height: 105vh;
     }
+
+    .heroBanner:before {
+        background-color: rgba(0, 0, 0, 0.2); /*oscurezco el banner*/
+     }  
      
+    .banner:before {
+        background-color: rgba(0, 0, 0, 0.1); /*oscurezco un poco las tonalidades*/
+    }
+
     .logo {
         font-size: 2.5em;
         padding: 0;
@@ -537,34 +608,6 @@ h1, h2, h3, h4, h5, h6 {
         padding: 20px;
     }
 
-    .main__txt {
-        font-size: 1.1em;
-    }
-   
-    .group--color .container {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        padding: 20px;
-    }
-
-    .column--50 img{
-        height: 300px;
-    }
-
-    .main__title {
-        font-size: 2.4em;
-    }
-
-    .main__about__description .column--50:nth-child(2),
-    .column__txt{ 
-        line-height: 21px;
-        font-size: 1.3em;
-    }
-
-    .column__title {
-        font-size: 1.4em;
-    }
-
     .today-special__title{
         font-size: 1.4em;
     }
@@ -587,30 +630,66 @@ h1, h2, h3, h4, h5, h6 {
     .main-footer h2 {
         font-size: 1.5em;
     }
+
+    .texto-nosotros .welcome {
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .texto-nosotros h2 {
+        margin-bottom: 20px;
+    }
+
+    .group__title {
+        font-size: 3em;
+    }
+
+    .welcome2 {
+        font-size: 1.3em;
+        margin-top: -10px;
+    }
+    
+    .texto-nosotros .welcome {
+        margin-bottom: 0px;
+    }
+
+    .texto-nosotros h2 {
+       margin-top: 0px;
+    }
 }
+
 
 @media screen and (min-width:1200px){
 
-    .column--50 img{
-        height: 55vh;
-    }
-    
-    .main__about__description .column--50:nth-child(2){
-        transform: translate(1px, -20px);
-        line-height: 25px;
+    .heroBanner {
+        margin-top: -220px;
     }
 
-    .btn {
-        transform: translate(1px, 20px);
-        padding: 20px 1px;
-        font-size: 1.1em;
+    .texto-nosotros .welcome {
+        font-size: 3.5rem;
+        margin-left: 50px;
     }
+    
+    .texto-nosotros h2 {
+        font-size: 3.5rem;
+        margin-left: 50px;
+    }
+    
+    .welcome2 {
+        font-size: 1.3em;
+        margin-left: 50px;
+    }
+
+    .btn--contact {
+        margin-top: 70px;
+        justify-items: center; 
+        margin-left: 50px;
+    }   
 }
 
 @media screen and (min-width:1440px){
 
     .heroBanner { 
-        margin-top: -190px;
         height: calc(100vh);
         width: 100%; 
         background-size: cover;
@@ -623,25 +702,6 @@ h1, h2, h3, h4, h5, h6 {
         height: 1100px;
         object-fit: cover;
     }
-
-    .main__about__description .column--50:nth-child(1) img {
-        width: 100%;
-        height: 480px;
-        object-fit: cover;
-   }
-
-    .main__about__description .column--50:nth-child(2), 
-    .column__txt   {
-        line-height: 30px;
-        font-size: 1.7em;
-    }
-
-    .btn {
-        transform: translate(1px, 20px);
-        margin-top: 45px;
-        padding-right: 45px;
-    }
-
 
     .column__title {
         font-size: 1.4em;
@@ -679,16 +739,13 @@ h1, h2, h3, h4, h5, h6 {
 
 
 @media screen and (min-width:1600px) {
+
     .container {
         width: 1400px;
     }
 
     .banner__img {
         height: 800px;
-    }
-
-    .main__about__description .column--50:nth-child(2) {
-        line-height: 35px;
     }
 
     .today-special img {
@@ -722,7 +779,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*-------------------Nosotros---------------------*//*---------Aca se usa GRID y FLEX---------*/
 
-.our-team{
+.our-team {
     text-align: center;
     margin-bottom: 20px;
     font-family: sans-serif;
@@ -817,6 +874,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (min-width:768px){
+
     .our-team__img {
         width: 200px;
         height: 200px;
@@ -853,6 +911,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (min-width:1440px){
+
     .our-team__img {
         width: 300px;
         height: 300px;
@@ -983,13 +1042,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .boton--secundario {
     padding: 1rem 1rem;
-    margin-top: 12px;
+    margin-top: 25px;
     margin-bottom: 15px;
     border-radius: 6%;
     font-size: 1rem;
-    background-color: #CC8E60;
-    border: 2px solid #CC8E60;
+    background-color: #644531;
+    border: 2px solid #DECFAC;
     color:#fff;
+    transform: translateX(15px);
 }
 
 .widget-combo:last-of-type {
@@ -1038,6 +1098,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 @media screen and (min-width:480px){
+
     .entrada__img {
         width: 150px;
         height: 150px;
@@ -1095,8 +1156,18 @@ h1, h2, h3, h4, h5, h6 {
         grid-row: 1 / 2 ;
         padding-bottom: 15px; 
     }
+
     .boton--secundario {
-        transform: translateX(6px);
+        transform: translateX(-5px);
+    }
+
+    .main__title {
+        padding-top: 30px;
+        font-size: 1.8em;
+    }
+
+    .main__txt {
+        padding-bottom: 40px;
     }
 }
 
@@ -1136,20 +1207,24 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .boton--secundario {
-        transform: translate(40px, 5px);
+        transform: translate(37px, 5px);
     }
 }
 
 @media screen and (min-width:1200px){
     
     .boton--secundario {
-        transform: translate(15px, 5px);
+        transform: translate(-10px, 5px);
         padding: 20px;
         font-size: 18px;
     }
 
     .widget-combo {
         transform: translate(50px)
+    }
+
+    .main__title {
+        font-size: 2.1em;
     }
 }
 
@@ -1163,7 +1238,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .boton--secundario {
-        transform: translate(15px, 5px);
+        transform: translate(2px, 5px);
         padding: 30px;
         font-size: 25px;
     }
@@ -1191,13 +1266,15 @@ h1, h2, h3, h4, h5, h6 {
     .sidebar h2 {
         font-size: 2.2em;
     }
+
     .boton--secundario {
-        transform: translateX(38px);
+        transform: translateX(20px);
     }
 }
 
 
 /*------------------Contacto----------------------*//*---------Aca se usa FLEX---------*/
+
 #onlyContact {
     color:#F6F7DD;
 }
@@ -1243,7 +1320,7 @@ h1, h2, h3, h4, h5, h6 {
     grid-column: 1 / 3 ;
 }
 
-.contact-form form p{
+.contact-form form p {
     margin: 0;
     padding: 1em;
 }
@@ -1301,15 +1378,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (min-width: 768px){
+
 .contact-wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
+
 .contact-wrapper>*{ /*a todos los elementos dentro del wrapper*/
     padding: 2em;
 }
+
 .contact-info h5,
-.contact-info ul{
+.contact-info ul {
     text-align: left;
 }
+
 }
