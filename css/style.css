@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.5rem;
     width: 35px;
     height: 35px;
-    background: #F6F7DD;
+    background: #FFF;
     border-radius: 50%;
 }
 
@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 .menu__link {
     display: block;
     padding: 15px;
-    color: #fff;
+    color: #FFF;
     text-decoration: none;
 }
 
@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
     animation: heroBanner 15s infinite linear;
     position: relative; /*para que se muestre despues del menu de navegacion*/
     z-index: -1000;
-    border-top: 2px outset #DECFAC;
+    border-top: 2px outset #DDD;
 }
 
 @keyframes heroBanner { /*---LINEA DE TIEMPO--- la animacion se llama heroBanner*/
@@ -417,7 +417,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (min-width:480px) {
 
     .logo {
-        color: #FBFCFC;
+        color: #FFF;
         padding: 0;
     }
 
