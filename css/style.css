@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo {
     font-size: 2em;
-    color: #4C2C13;
+    color: #FFF;
     padding-top: 10px;
     padding-bottom: 16px;
     font-family: 'Pacifico', cursive;
@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header__contactInfo__phone {
     color: #fff;
-    margin: -10px;
+    margin: -9px;
     margin-left: 2px;
     padding: 4px;
     font-size: .8em;
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 .header__contactInfo__address {
     padding: 10px;
     color: #fff;
-    margin: -9px;
+    margin: -8px;
     margin-left: -2px;
     font-size: .8em;
 }
@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu__link--select {
-    background: #CC8E60;;
+    background: #CC8E60;
 }
 
 .mostrar {
@@ -159,8 +159,8 @@ h1, h2, h3, h4, h5, h6 {
 /*-------------------Animacion heroBanner----------------------*/
 
 .heroBanner { 
-    margin-top: -125px;
-    height: calc(100vh);
+    margin-top: -210px;
+    height: calc(108vh);
     width: 100%; 
     background-size: cover;
     background-color:#644531;
@@ -202,7 +202,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.heroBanner:before {
+.heroBanner:before { /*uso de pseudoelemento*/
     content:'';
     position: absolute;
     width: 100%;
@@ -220,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
 /*-----------------Estilos del Banner-------------------*/
 
 .banner {
-    margin-top: -118px;
+    margin-top: -188px;
     background-color:#644531;
     position: relative; /*para que se muestre despues del menu de navegacion*/
     z-index: -1000; /* uso de --Z-- que se vea la direccion y el phone que quedan debajo sino*/
@@ -250,8 +250,8 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1500;    /*uso de -- Z-- para que el texto no se vaya detras del fondo que creamos, el menu tiene 2000 asi que lo tapara*/
     top: 60%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%); /*----uso de Translate para centrar el texto---*/
-    font-size: 1.3em;
+    transform: translateX(-50%) translateY(100%); /*----uso de Translate para centrar el texto---*/
+    font-size: 1.1em;
     font-weight: bold;
 }
 
@@ -331,7 +331,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 100%;
 }
 
-.imagenes2 img:nth-child(2){
+.imagenes2 img:nth-child(2){  /*Uso de pseudoclase*/
     margin-top: 10px;
 }
 
@@ -466,7 +466,6 @@ h1, h2, h3, h4, h5, h6 {
         display: inline-block;
     }
 
-
     .column--50-25 {
         width: 49%;
     }
@@ -474,7 +473,6 @@ h1, h2, h3, h4, h5, h6 {
     .column--33 {
         width: 32%;
     }
-
 
     .column__title {
         font-size: 1.2em;
@@ -497,6 +495,13 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width:768px) {
 
+.logo {
+    font-size: 3em;
+}
+
+.banner__content{
+    font-size: 2em;
+}
 .contenedor-nosotros {
     display: flex;
     justify-content: space-between;
@@ -562,8 +567,8 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (min-width:1024px) {
 
     .heroBanner { 
-        margin-top: -188px;
-        height: 105vh;
+        margin-top: -195px;
+        height: 110vh;
     }
 
     .heroBanner:before {
@@ -575,7 +580,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .logo {
-        font-size: 2.5em;
+        font-size: 3.5em;
         padding: 0;
     }
 
@@ -584,13 +589,17 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 15px;
         padding-right: 0;
     }
+    
+    .header__contactInfo__address {
+       margin-bottom: .5px;
+    }
 
     .nav {
       padding:0;
     }
 
     .banner__content{
-        font-size: 2em;
+        font-size: 2.3em;
     }
 
     .icon-menu {
@@ -676,7 +685,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .welcome2 {
-        font-size: 1.3em;
+        font-size: 1.4em;
         margin-left: 50px;
     }
 
@@ -692,6 +701,7 @@ h1, h2, h3, h4, h5, h6 {
     .heroBanner { 
         height: calc(100vh);
         width: 100%; 
+        margin-top: -250px;
         background-size: cover;
         background-color:#644531;
         background-position: center;
@@ -704,32 +714,31 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .column__title {
-        font-size: 1.4em;
+        font-size: 1.5em;
         margin-bottom: 25px;
     }
 
     .main__txt{
-        font-size:1.3em;
+        font-size:1.4em;
         font-weight: lighter;
     }
 
-
     .today-special__info,
     .today-special__price{
-        font-size:1.3em;
+        font-size:1.4em;
     }
 
     .logo {
-        font-size: 3em;
+        font-size: 4em;
     }
 
     .nav {
-        font-size: 1.2em;
+        font-size: 2em;
     }
 
     .header__contactInfo__phone,
     .header__contactInfo__address{
-        font-size: 1em;
+        font-size: 1.3em;
     }
 
     .copy{
