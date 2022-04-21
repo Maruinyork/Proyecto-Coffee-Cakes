@@ -254,6 +254,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateX(-50%) translateY(100%); /*----uso de Translate para centrar el texto---*/
     font-size: 1.1em;
     font-weight: bold;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em /*para que resalte a pesar del fondo clarito*/
 }
 
 /*-----------------Estilos Principales------------------*/
