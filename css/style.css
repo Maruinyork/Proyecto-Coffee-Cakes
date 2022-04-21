@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 16px;
     font-family: 'Pacifico', cursive;
     font-weight: 10px;
-    text-shadow: black 0.1em 0.1em 0.2em /*para que resalte a pesar del fondo clarito*/
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em /*para que resalte a pesar del fondo clarito*/
 }
 
 .header__contactInfo__phone {
