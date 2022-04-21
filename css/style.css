@@ -49,6 +49,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 16px;
     font-family: 'Pacifico', cursive;
     font-weight: 10px;
+    text-shadow: black 0.1em 0.1em 0.2em /*para que resalte a pesar del fondo clarito*/
 }
 
 .header__contactInfo__phone {
@@ -130,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0;
     list-style: none;
-    background: rgba(0,0,0,.1);
+    background: rgba(0,0,0,0.2);
     text-align: center;
     height: 0;   /*esto es para que se pueda animar*/
     overflow: hidden;
