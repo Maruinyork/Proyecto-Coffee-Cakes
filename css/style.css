@@ -58,6 +58,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 2px;
     padding: 4px;
     font-size: .8em;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em /*para que resalte a pesar del fondo clarito*/
 }
 
 .header__contactInfo__address {
@@ -66,6 +67,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: -8px;
     margin-left: -2px;
     font-size: .8em;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em /*para que resalte a pesar del fondo clarito*/
 }
 
 .icon-phone,
@@ -1339,6 +1341,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo-contact {
     font-family: 'Pacifico', cursive;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em /*para que resalte a pesar del fondo clarito*/
 }
 
 .affair {
